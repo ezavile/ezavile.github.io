@@ -80,3 +80,9 @@ typings/
 # End of https://www.gitignore.io/api/node
 
 dist
+
+src
+
+.editorconfig
+package.json
+yarn.lock
