@@ -7,54 +7,60 @@
   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css">
   <title>Edgar Zavala</title>
 </head>
 
 <body>
-  <h1>My personal site</h1>
-  <div>
-    <section>
-      <h2>Overview</h2>
+  <h1 class="me_u-onlyRead">My personal site</h1>
+  <div class="me_Card">
+    <section class="me_Card-overview">
+      <h2 class="me_u-onlyRead">Overview</h2>
       <p>
-        <strong>Edgar Zavala</strong>
-        <strong>Lead Front-End Developer at <a href="https://www.mifiel.com" target="_blank">Mifiel</a></strong>
+        <strong class="me_Card-overview-name">Edgar Zavala</strong>
+        <strong class="me_Card-overview-job">Lead Front-End Developer at <a href="https://www.mifiel.com" target="_blank">Mifiel</a></strong>
       </p>
-      <p>Hello! My name is Edgar and I am a front-end developer with 6 years of experience
-        creating web applications. I use tools like React and Angular to build high-quality, maintainable, scalable and
-        reusable components and Front-end solutions. I am passionate about doing things right and doing them quickly. I
-        enjoy focusing on interesting business challenges and innovative technology.
+      <p class="me_Card-overview-aboutMe">
+        Hello! My name is Edgar and I am a front-end developer with 6 years of experience creating web applications. I use tools like React and Angular to build high-quality, maintainable, scalable and reusable components and Front-end solutions. I am passionate about doing things right and doing them quickly. I enjoy focusing on interesting business challenges and innovative technology.
       </p>
     </section>
-    <section>
-      <h2>Contact me</h2>
-      <address>
-        Saltillo, Mexico
+    <section class="me_Card-contactMe">
+      <h2 class="me_u-onlyRead">Contact me</h2>
+      <address class="me_Card-contactMe-location">
+        <span class="me_Card-contactMe-location-icon" data-icon="ei-location"></span> Saltillo, Mexico
       </address>
-      <ul>
-        <li>
+      <ul class="me_Card-contactMe-ways">
+        <li class="me_Card-contactMe-ways-item">
           <a href="mailto:ezavile@gmail.com" target="_blank">
-            <span>
+            <span class="me_u-onlyRead">
               e-mail: ezavile@gmail.com
             </span>
+            <span data-icon="ei-envelope" data-size="m"></span>
           </a>
         </li>
-        <li>
+        <li class="me_Card-contactMe-ways-item">
           <a href="https://www.github.com/ezavile" target="_blank">
-            <span>
+            <span class="me_u-onlyRead">
               github username: ezavile
             </span>
+            <span data-icon="ei-sc-github" data-size="m"></span>
           </a>
         </li>
-        <li>
+        <li class="me_Card-contactMe-ways-item">
           <a href="https://www.linkedin.com/in/edgar-zavala-a2839b126" target="_blank">
-            <span>
+            <span class="me_u-onlyRead">
               linkedin: edgar-zavala-a2839b126
             </span>
+            <span data-icon="ei-sc-linkedin" data-size="m"></span>
           </a>
         </li>
       </ul>
     </section>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #525760;
+}
+
+h1,
+h2,
+strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.me_u-onlyRead {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+.me_Card {
+  padding: 22em 2em 2em;
+  background-color: white;
+}
+
+.me_Card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20em;
+  background-image: url('./../images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #525760;
+}
+
+.me_Card-overview-name {
+  font-size: 1.5em;
+}
+
+.me_Card-overview-job {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+.me_Card-overview-job a {
+  color: #14d0a6;
+  border-bottom: 1px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.me_Card-overview-job a:hover {
+  border-color: #14d0a6;
+}
+
+.me_Card-overview-aboutMe {
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+
+.me_Card-contactMe {
+  margin-bottom: -15px;
+}
+
+.me_Card-overview-aboutMe,
+.me_Card-contactMe {
+  margin-top: 1.15em;
+}
+
+.me_Card-contactMe-location {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+  transition: color 0.5s ease;
+  font-size: 0.8em;
+}
+
+.me_Card-contactMe-location-icon {
+  opacity: 0.8;
+}
+
+.me_Card-contactMe-ways {
+  display: flex;
+  margin-left: -8px;
+}
+
+.me_Card-contactMe-ways-item {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.me_Card-contactMe-ways-item:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 36em) {
+  body {
+    background-color: #01bbb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .me_Card,
+  .me_Card:before {
+    box-shadow: 5px 5px 70px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .me_Card {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .me_Card-contactMe {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .me_Card-contactMe-ways {
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .me_Card {
+    padding-top: 2em;
+    padding-left: 22em;
+  }
+
+  .me_Card:before {
+    height: 100%;
+    width: 20em;
+    background-image: url('./../images/profile.jpg');
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .me_Card {
+    padding-left: 24em;
+    max-width: 50em;
+  }
+
+  .me_Card:before {
+    top: -2em;
+    bottom: -2em;
+    left: 2em;
+    height: auto;
+  }
+}
